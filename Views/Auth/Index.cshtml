@@ -1,0 +1,37 @@
+﻿
+@{
+    Layout = null;
+}
+
+<html>
+    <head>
+    <title>Movie App</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/login.css" />
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="img-wallpaper" src="~/images/login-wallpaper.jpg" />
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <div id="dv-container">
+                    <div>
+                        <label id="label-app" class="mb-3">Movie App</label>
+                    </div>
+                        <form asp-action="login" method="post">
+                            <div>
+                                <input placeholder="Email" class="form-control mb-3" />
+                            </div>
+                            <div>
+                                <input placeholder="Password" type="password" class="form-control mb-3" />
+                            </div>
+                            <div>
+                                <input type="submit" class="btn btn-primary full-width" value="Login" />
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
